@@ -51,6 +51,52 @@ body {
     cursor: pointer;
 }
 
+.Banner-box{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    position: relative;
+    height: 21rem;
+    width: 56rem;
+    margin: 4rem 0;
+    overflow: hidden;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/banner background.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.75rem;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+.banner-content {
+    text-align: center;
+    height: 11.75rem;
+    width: 31.25rem;
+    margin: 44px;
+}
+
+.banner-content h1,h4{
+    z-index: 1;
+    
+}
+
+.banner-content h1 {
+    line-height: 1.5;
+    font-size: 50px;
+}
+
 .card-hadder {
     text-align: center;
     margin-top: 2rem;
